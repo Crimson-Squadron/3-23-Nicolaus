@@ -18,13 +18,15 @@
         <li class="nav-item">
           <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="/contacts">Contact Us</a>
         </li>
+      </ul>
         
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+      <ul class="navbar-nav ms-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="{{route ('login')}}">Login</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="{{route ('register')}}">Register</a>
+         </li>
       </ul>
     </div>
   </div>
